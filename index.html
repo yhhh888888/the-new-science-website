@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The New Science</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      color: #fff;
+      background: linear-gradient(135deg, #0f2027 0%, #2c5364 100%);
+      min-height: 100vh;
+      background-image: url('https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=1500&q=80');
+      background-size: cover;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-blend-mode: multiply;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      background: rgba(10, 20, 40, 0.85);
+      border-radius: 18px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+      margin-top: 60px;
+    }
+    h1 {
+      text-align: center;
+      font-size: 3rem;
+      margin-bottom: 0.5em;
+      letter-spacing: 2px;
+      background: linear-gradient(90deg, #00c6ff, #0072ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .images-section {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      margin-top: 40px;
+    }
+    .image-block {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 32px;
+      background: rgba(255,255,255,0.05);
+      border-radius: 12px;
+      padding: 24px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+    }
+    .image-block:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+    .image-block img {
+      width: 260px;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+      border: 2px solid #00c6ff44;
+    }
+    .image-details {
+      flex: 1;
+    }
+    .image-details h2 {
+      margin: 0 0 12px 0;
+      font-size: 1.6rem;
+      color: #00c6ff;
+    }
+    .image-details p {
+      font-size: 1.1rem;
+      color: #e0e6ed;
+      line-height: 1.6;
+    }
+    @media (max-width: 700px) {
+      .image-block {
+        flex-direction: column !important;
+        gap: 18px;
+      }
+      .image-block img {
+        width: 100%;
+        height: 180px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>The New Science</h1>
+    <div class="images-section">
+      <div class="image-block">
+        <img src="photo_6098349434698666859_y.jpg" alt="Universe Image 1">
+        <div class="image-details">
+          <h2>Image One: The Cosmic Web</h2>
+          <p>This image represents the vast interconnected structure of the universe, where galaxies and dark matter form a cosmic web stretching across unimaginable distances. It highlights the beauty and complexity of the cosmos.</p>
+        </div>
+      </div>
+      <div class="image-block">
+        <img src="photo_6098349434698666858_y.jpg" alt="Universe Image 2">
+        <div class="image-details">
+          <h2>Image Two: Stellar Nurseries</h2>
+          <p>Here we see a region where new stars are born from clouds of gas and dust. These stellar nurseries are the cradles of creation, giving rise to the next generation of stars and planetary systems.</p>
+        </div>
+      </div>
+      <div class="image-block">
+        <img src="photo_6098349434698666857_y.jpg" alt="Universe Image 3">
+        <div class="image-details">
+          <h2>Image Three: The Unknown Depths</h2>
+          <p>This image invites us to ponder the mysteries that remain hidden in the universe. From black holes to dark energy, the cosmos is full of secrets waiting to be discovered by the new science.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
